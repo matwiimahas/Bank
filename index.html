@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банкомат</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js" integrity="sha512-4GsgvzFFry8SXj8c/VcCjjEZ+du9RZp/627AEQRVLatx6d60AUnUYXg0lGn538p44cgRs5E2GXq+8IOetJ+6ow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="bankomat">
+            <div class="screen">
+                <div class="left">
+                    <button class="button" id="button-top-left">→</button>
+                    <button class="button" id="button-center-left">→</button>
+                    <button class="button" id="button-bottom-left">→</button>
+                </div>
+                <div class="main">
+                    <div class="left">
+                        <button class="button-main" id="button-main-1">Action1</button>
+                        <button class="button-main" id="button-main-2">Action2</button>
+                        <button class="button-main" id="button-main-3">Action3</button>
+                    </div>
+                    <div class="display">
+                        <h2 id="display-title">Чекаємо на картку...</h2>
+                        <p id="display-text">Ви запхайте картку щоб продовжити, якщо ви не маєте картки, натисніть на кнопку</p>
+                        <div class="input" id="input"></div>
+                    </div>
+                    <div class="right">
+                        <button class="button-main" id="button-main-4">Action4</button>
+                        <button class="button-main" id="button-main-5">Action5</button>
+                        <button class="button-main" id="button-main-6">Action6</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <button class="button" id="button-top-right">←</button>
+                    <button class="button" id="button-center-right">←</button>
+                    <button class="button" id="button-bottom-right">←</button>
+                </div>
+            </div>
+            <div class="keyboard">
+                <button class="button" id="1">1</button>
+                <button class="button" id="2">2</button>
+                <button class="button" id="3">3</button>
+                <button class="button" id="4">4</button>
+                <button class="button" id="5">5</button>
+                <button class="button" id="6">6</button>
+                <button class="button" id="7">7</button>
+                <button class="button" id="8">8</button>
+                <button class="button" id="9">9</button>
+                <button class="button" id="submit">✓</button>
+                <button class="button" id="0">0</button>
+                <button class="button" id="clear">C</button>
+            </div>
+        </div>
+        <div class="btns">
+            <button class="btn" id="insertCard">Insert Card</button>
+            <button class="btn" id="takeCard">Take Card</button>
+            <button class="btn" id="insertMoney">Insert Money</button>
+            <select type="number" class="input-money" id="moneyInput">
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+            </select>
+            <button class="btn" id="takeMoney">Take Money</button>
+            <h3 id="balance">Cash: 0</h3>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
